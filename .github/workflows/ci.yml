@@ -16,6 +16,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.gitversion.outputs.majorMinorPatch }}
     steps:
     - uses: actions/checkout@v3
       with:
@@ -30,36 +32,32 @@ jobs:
       uses: gittools/actions/gitversion/setup@v0.10.2
       with:
         preferLatestVersion: true
+        versionSpec: '5.x'
 
     - name: Determine Version
       id: gitversion
       uses: gittools/actions/gitversion/execute@v0.10.2
 
-    - name: Display GitVersion outputs
-      run: |
-        echo "Major: ${{ steps.gitversion.outputs.major }}"
-        echo "Minor: ${{ steps.gitversion.outputs.minor }}"
-        echo "Patch: ${{ steps.gitversion.outputs.patch }}"
-        echo "NuGetVersion: ${{ steps.gitversion.outputs.nuGetVersion }}"
-        echo "FullSemVer: ${{ steps.gitversion.outputs.fullSemVer }}"
+    - name: Create output directory
+      run: mkdir -p ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
 
     - name: Restore dependencies
       run: dotnet restore ${{ env.SOLUTION_PATH }}
 
     - name: Build
-      run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Release --no-restore /p:Version=${{ steps.gitversion.outputs.majorMinorPatch }}
+      run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Release --no-restore -p:Version=${{ steps.gitversion.outputs.majorMinorPatch }}
 
     - name: Test
-      run: dotnet test ${{ env.SOLUTION_PATH }} --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./coverage
+      run: dotnet test ${{ env.SOLUTION_PATH }} --configuration Release --no-build --verbosity normal
 
     - name: Pack Core
-      run: dotnet pack src/DatabaseSeeder/DatabaseSeeder.csproj --configuration Release --no-build --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }} /p:Version=${{ steps.gitversion.outputs.majorMinorPatch }}
+      run: dotnet pack src/DatabaseSeeder/DatabaseSeeder.csproj --configuration Release --no-build --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }} -p:Version=${{ steps.gitversion.outputs.majorMinorPatch }}
 
     - name: Pack EntityFramework
-      run: dotnet pack src/DatabaseSeeder.EntityFramework/DatabaseSeeder.EntityFramework.csproj --configuration Release --no-build --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }} /p:Version=${{ steps.gitversion.outputs.majorMinorPatch }}
+      run: dotnet pack src/DatabaseSeeder.EntityFramework/DatabaseSeeder.EntityFramework.csproj --configuration Release --no-build --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }} -p:Version=${{ steps.gitversion.outputs.majorMinorPatch }}
 
     - name: Pack Json
-      run: dotnet pack src/DatabaseSeeder.Json/DatabaseSeeder.Json.csproj --configuration Release --no-build --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }} /p:Version=${{ steps.gitversion.outputs.majorMinorPatch }}
+      run: dotnet pack src/DatabaseSeeder.Json/DatabaseSeeder.Json.csproj --configuration Release --no-build --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }} -p:Version=${{ steps.gitversion.outputs.majorMinorPatch }}
 
     - name: Upload NuGet packages as artifacts
       uses: actions/upload-artifact@v3

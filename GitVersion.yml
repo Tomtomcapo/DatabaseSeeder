@@ -2,22 +2,17 @@ mode: ContinuousDelivery
 assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatch
 increment: Patch
-tag-prefix: '[vV]'
-major-version-bump-message: '\+semver:\s?(breaking|major)'
-minor-version-bump-message: '\+semver:\s?(feature|minor)'
-patch-version-bump-message: '\+semver:\s?(fix|patch)'
+tag-prefix: v
 branches:
   master:
-    regex: ^master$
-    mode: ContinuousDelivery
+    tag: ''
     increment: Patch
   main:
-    regex: ^main$
-    mode: ContinuousDelivery
+    tag: ''
     increment: Patch
   feature:
-    regex: ^features?[/-]
+    tag: beta
     increment: Minor
   pull-request:
-    regex: ^(pull|pull\-requests|pr)[/-]
+    tag: pr
     increment: Inherit
