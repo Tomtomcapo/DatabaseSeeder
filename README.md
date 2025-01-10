@@ -263,7 +263,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 📚 [Documentation](docs/README.md)
 - 🐛 [Issue Tracker](https://github.com/Tomtomcapo/DatabaseSeeder/issues)
-- 💬 [Discussions](https://github.com/Tomtomcapo/DatabaseSeeder/discussions)
 
 ---
 

@@ -75,11 +75,8 @@ public static class JsonExtensions
 
         foreach (var jsonFile in jsonFiles)
         {
-            // You would need to implement logic here to determine the entity type
-            // based on the file name or content
-            // This is just a placeholder for the concept
-            throw new NotImplementedException(
-                "Implementation needs to determine entity type from JSON file");
+            // Register the JSON provider
+            throw new NotImplementedException("Implementation needs to determine entity type from JSON file");
         }
 
         return builder;
