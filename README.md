@@ -2,8 +2,10 @@
 
 A powerful, flexible, and dependency-aware database seeding framework for .NET applications.
 
+![NuGet Version](https://img.shields.io/nuget/v/DatabaseSeeder)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Built for .NET 8](https://img.shields.io/badge/.NET-8-512BD4)](https://dotnet.microsoft.com/download/dotnet/8.0)
+
 
 ## What is Database Seeding?
 
