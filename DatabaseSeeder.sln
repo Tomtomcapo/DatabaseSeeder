@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DC738B30-296C-4822-A93A-3A8BF6AEBC29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseSeeder", "src\DatabaseSeeder\DatabaseSeeder.csproj", "{156B0324-9BDB-4E3A-9756-BEB90EC37CF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseSeeder.EntityFramework", "src\DatabaseSeeder.EntityFramework\DatabaseSeeder.EntityFramework.csproj", "{E68E14B3-C9AA-40DA-80E5-132D40C66053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseSeeder.Json", "src\DatabaseSeeder.Json\DatabaseSeeder.Json.csproj", "{B9A5FA70-CA84-4467-873B-1948980BDF1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BB575A79-8FD1-4B6D-97C7-5090204F78C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseSeeder.Tests", "tests\DatabaseSeeder.Tests\DatabaseSeeder.Tests.csproj", "{3F2B005A-36AE-4A6E-B3D6-662D646202D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseSeeder.EntityFramework.Tests", "tests\DatabaseSeeder.EntityFramework.Tests\DatabaseSeeder.EntityFramework.Tests.csproj", "{5E229624-336F-46B0-AF5D-9A1C1FC20E51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseSeeder.Json.Tests", "tests\DatabaseSeeder.Json.Tests\DatabaseSeeder.Json.Tests.csproj", "{A073FC63-600C-4BB0-8EDA-016F789432D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{156B0324-9BDB-4E3A-9756-BEB90EC37CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156B0324-9BDB-4E3A-9756-BEB90EC37CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156B0324-9BDB-4E3A-9756-BEB90EC37CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156B0324-9BDB-4E3A-9756-BEB90EC37CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E68E14B3-C9AA-40DA-80E5-132D40C66053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E68E14B3-C9AA-40DA-80E5-132D40C66053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E68E14B3-C9AA-40DA-80E5-132D40C66053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E68E14B3-C9AA-40DA-80E5-132D40C66053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A5FA70-CA84-4467-873B-1948980BDF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A5FA70-CA84-4467-873B-1948980BDF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A5FA70-CA84-4467-873B-1948980BDF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A5FA70-CA84-4467-873B-1948980BDF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2B005A-36AE-4A6E-B3D6-662D646202D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2B005A-36AE-4A6E-B3D6-662D646202D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2B005A-36AE-4A6E-B3D6-662D646202D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2B005A-36AE-4A6E-B3D6-662D646202D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E229624-336F-46B0-AF5D-9A1C1FC20E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E229624-336F-46B0-AF5D-9A1C1FC20E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E229624-336F-46B0-AF5D-9A1C1FC20E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E229624-336F-46B0-AF5D-9A1C1FC20E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A073FC63-600C-4BB0-8EDA-016F789432D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A073FC63-600C-4BB0-8EDA-016F789432D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A073FC63-600C-4BB0-8EDA-016F789432D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A073FC63-600C-4BB0-8EDA-016F789432D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{156B0324-9BDB-4E3A-9756-BEB90EC37CF0} = {DC738B30-296C-4822-A93A-3A8BF6AEBC29}
+		{E68E14B3-C9AA-40DA-80E5-132D40C66053} = {DC738B30-296C-4822-A93A-3A8BF6AEBC29}
+		{B9A5FA70-CA84-4467-873B-1948980BDF1D} = {DC738B30-296C-4822-A93A-3A8BF6AEBC29}
+		{3F2B005A-36AE-4A6E-B3D6-662D646202D5} = {BB575A79-8FD1-4B6D-97C7-5090204F78C3}
+		{5E229624-336F-46B0-AF5D-9A1C1FC20E51} = {BB575A79-8FD1-4B6D-97C7-5090204F78C3}
+		{A073FC63-600C-4BB0-8EDA-016F789432D8} = {BB575A79-8FD1-4B6D-97C7-5090204F78C3}
+	EndGlobalSection
+EndGlobal

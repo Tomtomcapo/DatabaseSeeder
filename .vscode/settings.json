@@ -1,0 +1,7 @@
+{
+    "dotnet-test-explorer.testProjectPath": "**/tests/**/*Tests.csproj",
+    "dotnet-test-explorer.autoWatch": true,
+    "dotnet-test-explorer.showCodeLens": true,
+    "dotnet-test-explorer.testArguments": "/p:CollectCoverage=true",
+    "dotnet-test-explorer.autoExpandTree": true
+}
