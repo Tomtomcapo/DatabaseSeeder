@@ -4,6 +4,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>DatabaseSeeder.EntityFramework</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Tomtomcapo</Authors>
+    <Description>Integration with Entity Framework for DatabaseSeeder.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Tomtomcapo/DatabaseSeeder</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Tomtomcapo/DatabaseSeeder</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
