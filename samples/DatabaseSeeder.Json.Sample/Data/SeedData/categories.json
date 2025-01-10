@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Fiction",
+        "description": "Fictional literature"
+    },
+    {
+        "id": 2,
+        "name": "Non-Fiction",
+        "description": "Non-fictional literature"
+    },
+    {
+        "id": 3,
+        "name": "Science Fiction",
+        "description": "Science fiction literature"
+    },
+    {
+        "id": 4,
+        "name": "Mystery",
+        "description": "Mystery and detective fiction"
+    },
+    {
+        "id": 5,
+        "name": "Biography",
+        "description": "Biographical works"
+    }
+]

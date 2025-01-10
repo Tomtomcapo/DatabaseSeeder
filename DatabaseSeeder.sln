@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{442F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseSeeder.Sample", "samples\DatabaseSeeder.Sample\DatabaseSeeder.Sample.csproj", "{64EDE726-9856-4AD7-A608-3C4674BAE8A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseSeeder.Json.Sample", "samples\DatabaseSeeder.Json.Sample\DatabaseSeeder.Json.Sample.csproj", "{9BA037A6-D5C8-44DA-B0AF-C614C1DA8A60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{64EDE726-9856-4AD7-A608-3C4674BAE8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64EDE726-9856-4AD7-A608-3C4674BAE8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64EDE726-9856-4AD7-A608-3C4674BAE8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA037A6-D5C8-44DA-B0AF-C614C1DA8A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA037A6-D5C8-44DA-B0AF-C614C1DA8A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA037A6-D5C8-44DA-B0AF-C614C1DA8A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA037A6-D5C8-44DA-B0AF-C614C1DA8A60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{156B0324-9BDB-4E3A-9756-BEB90EC37CF0} = {DC738B30-296C-4822-A93A-3A8BF6AEBC29}
@@ -69,5 +75,6 @@ Global
 		{5E229624-336F-46B0-AF5D-9A1C1FC20E51} = {BB575A79-8FD1-4B6D-97C7-5090204F78C3}
 		{A073FC63-600C-4BB0-8EDA-016F789432D8} = {BB575A79-8FD1-4B6D-97C7-5090204F78C3}
 		{64EDE726-9856-4AD7-A608-3C4674BAE8A7} = {442F652F-1165-41E0-812B-C2C9E9E827A3}
+		{9BA037A6-D5C8-44DA-B0AF-C614C1DA8A60} = {442F652F-1165-41E0-812B-C2C9E9E827A3}
 	EndGlobalSection
 EndGlobal

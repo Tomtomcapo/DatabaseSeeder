@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "1984",
+        "authorId": 1,
+        "price": 19.99,
+        "publishedDate": "1949-06-08",
+        "description": "A dystopian social science fiction novel",
+        "categoryIds": [1, 3]
+    },
+    {
+        "id": 2,
+        "title": "The Hobbit",
+        "authorId": 2,
+        "price": 24.99,
+        "publishedDate": "1937-09-21",
+        "description": "A fantasy novel set in Middle-earth",
+        "categoryIds": [1]
+    },
+    {
+        "id": 3,
+        "title": "Foundation",
+        "authorId": 3,
+        "price": 21.99,
+        "publishedDate": "1951-05-01",
+        "description": "The first novel in the Foundation series",
+        "categoryIds": [1, 3]
+    }
+]
